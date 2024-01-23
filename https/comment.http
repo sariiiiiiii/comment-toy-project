@@ -1,0 +1,18 @@
+### create comment parent id is null
+POST localhost:8080/comment
+Content-Type: application/json
+
+{
+  "postId": 1,
+  "content": "1번 게시글의 1번 댓글입니다"
+}
+
+### create comment parent id is not null
+POST localhost:8080/comment
+Content-Type: application/json
+
+{
+  "postId": 1,
+  "parentId": 1,
+  "content": "1번 게시글의 1번 댓글의 3번 대댓글입니다"
+}

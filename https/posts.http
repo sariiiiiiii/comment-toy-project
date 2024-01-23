@@ -1,0 +1,7 @@
+### find all posts
+GET localhost:8080/post
+Content-Type: application/json
+
+### get posts
+GET localhost:8080/post/1
+Content-Type: application/json
